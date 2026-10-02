@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           surface: const Color(0xFFF8F9FA),
         ),
         scaffoldBackgroundColor: const Color(0xFFF8F9FA),
-        
+
         // ตกแต่ง AppBar ให้คลีน ไม่มีเงา
         appBarTheme: const AppBarTheme(
           centerTitle: true,
@@ -34,12 +34,15 @@ class MyApp extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        
+
         // ปรับดีไซน์ช่องกรอกข้อมูล (TextField) ทั้งแอปให้มนและสบายตา
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: Colors.white,
-          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 14,
+          ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide: const BorderSide(color: Color(0xFFE0E0E0)),
@@ -53,7 +56,7 @@ class MyApp extends StatelessWidget {
             borderSide: const BorderSide(color: Color(0xFF6C5CE7), width: 1.5),
           ),
         ),
-        
+
         // ปรับดีไซน์ปุ่มกดหลัก (ElevatedButton) ให้เต็มความกว้างและมุมมน
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
